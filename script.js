@@ -1,5 +1,11 @@
 const buttons = document.querySelector(".items");
 const filterImg = document.querySelectorAll(".image");
+const previewBox = document.querySelector(".preview-box");
+previewImg = previewBox.querySelector("img"),
+categoryName = previewBox.querySelector(".title p"),
+closeIcon= previewBox.querySelector(".icon");
+shadow= document.querySelector(".shadow");
+
 
 window.onload=()=>{ 
     buttons.onclick=(selectedItem)=>{
@@ -28,12 +34,6 @@ window.onload=()=>{
 
 
 //preview fullscreen
-const previewBox = document.querySelector(".preview-box");
-previewImg = previewBox.querySelector("img"),
-categoryName = previewBox.querySelector(".title p"),
-closeIcon= previewBox.querySelector(".icon");
-shadow= document.querySelector(".shadow");
-
 
 
 function preview(element){
